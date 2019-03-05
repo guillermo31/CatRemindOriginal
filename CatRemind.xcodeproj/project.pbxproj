@@ -13,6 +13,7 @@
 		53734CDB2225C75A0062C56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53734CDA2225C75A0062C56F /* Assets.xcassets */; };
 		53734CDE2225C75A0062C56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53734CDC2225C75A0062C56F /* LaunchScreen.storyboard */; };
 		53734CE9222EFF050062C56F /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 53734CE8222EFF050062C56F /* cat.png */; };
+		53734CEC222EFFC90062C56F /* CatFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734CEB222EFFC90062C56F /* CatFood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		53734CDD2225C75A0062C56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53734CDF2225C75A0062C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53734CE8222EFF050062C56F /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		53734CEB222EFFC90062C56F /* CatFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		53734CD22225C7570062C56F /* CatRemind */ = {
 			isa = PBXGroup;
 			children = (
+				53734CEA222EFF840062C56F /* Model */,
 				53734CE52225C7950062C56F /* Resources */,
 				53734CE62225C79D0062C56F /* Controller */,
 				53734CE72225C7A60062C56F /* View */,
@@ -89,6 +92,14 @@
 				53734CDC2225C75A0062C56F /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		53734CEA222EFF840062C56F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53734CEB222EFFC90062C56F /* CatFood.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53734CD62225C7570062C56F /* ViewController.swift in Sources */,
+				53734CEC222EFFC90062C56F /* CatFood.swift in Sources */,
 				53734CD42225C7570062C56F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
