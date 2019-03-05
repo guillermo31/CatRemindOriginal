@@ -11,14 +11,26 @@ import UIKit
 
 class CatFood
 {
-    
-    private var foodSize: Int
+    //size in pounds
+    private var foodSize: Double
     private var foodType: String
     
-    init(size: Int, type: String)
+    
+    init(size: Double, type: String)
     {
         self.foodSize = size
         self.foodType = type
+    }
+    
+    public func whenRunsOut() -> Double
+    {
+        var days = 0.0
+        //serving in pounds
+        let dailyServing = 0.4
+        
+        days = foodSize / dailyServing
+        
+        return days
     }
     
     
