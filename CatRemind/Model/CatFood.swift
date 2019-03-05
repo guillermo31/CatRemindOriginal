@@ -12,6 +12,14 @@ import UIKit
 class CatFood
 {
     
+    private var foodSize: Int
+    private var foodType: String
+    
+    init(size: Int, type: String)
+    {
+        self.foodSize = size
+        self.foodType = type
+    }
     
     
     
