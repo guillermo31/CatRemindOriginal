@@ -14,6 +14,7 @@
 		53734CDE2225C75A0062C56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53734CDC2225C75A0062C56F /* LaunchScreen.storyboard */; };
 		53734CE9222EFF050062C56F /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 53734CE8222EFF050062C56F /* cat.png */; };
 		53734CEC222EFFC90062C56F /* CatFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734CEB222EFFC90062C56F /* CatFood.swift */; };
+		53734CEE2230B80D0062C56F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734CED2230B80D0062C56F /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		53734CDF2225C75A0062C56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53734CE8222EFF050062C56F /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		53734CEB222EFFC90062C56F /* CatFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFood.swift; sourceTree = "<group>"; };
+		53734CED2230B80D0062C56F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				53734CD52225C7570062C56F /* ViewController.swift */,
+				53734CED2230B80D0062C56F /* ViewController2.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53734CD62225C7570062C56F /* ViewController.swift in Sources */,
+				53734CEE2230B80D0062C56F /* ViewController2.swift in Sources */,
 				53734CEC222EFFC90062C56F /* CatFood.swift in Sources */,
 				53734CD42225C7570062C56F /* AppDelegate.swift in Sources */,
 			);
