@@ -8,23 +8,31 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var muchFood: UITextField!
+    @IBOutlet weak var foodKind: UITextField!
+    
+    
+    @IBAction func submitNewFood(_ sender: Any)
+    {
+        guard let newSize = Double(muchFood.text!)
+        else
+        {
+            print("Not a number!")
+            return
+        }
+        
+        let newFoodKind = foodKind.text!
+        
+        let newFood = CatFood(size: newSize, type: newFoodKind)
     }
-    */
-
+    
 }
