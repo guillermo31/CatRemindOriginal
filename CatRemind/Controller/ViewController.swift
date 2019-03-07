@@ -12,10 +12,6 @@ class ViewController: UIViewController
 {
     
     
-    @IBAction func readyToFeed(_ sender: UIButton)
-    {
-        
-    }
     override func viewDidLoad()
     {
         super.viewDidLoad()

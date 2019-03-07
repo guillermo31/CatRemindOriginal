@@ -13,6 +13,7 @@
         <!--View Controller2-->
         <scene sceneID="OUV-2G-Leg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdj-jJ-fWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pnV-iA-6Gr" customClass="ViewController2" customModule="CatRemind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5m9-Lg-3Md">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -51,7 +52,6 @@
                         <viewLayoutGuide key="safeArea" id="5rM-7z-veO"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdj-jJ-fWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="132.58928571428572"/>
         </scene>
@@ -112,9 +112,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="newCycle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4p-6e-KgU"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="55P-Sn-EZg">
                                 <rect key="frame" x="87" y="419" width="240" height="208"/>
@@ -141,17 +138,13 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="newCycle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBY-qy-ACY"/>
-                                    <action selector="readyToFeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTo-Qj-xEN"/>
+                                    <segue destination="pnV-iA-6Gr" kind="show" id="ytz-xt-x9D"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.65504512201767295" blue="0.50626698463523045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="newCycle" destination="tkG-kp-5bm" id="xYd-Mn-7cv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
