@@ -33,6 +33,9 @@ class ViewController2: UIViewController
         let newFoodKind = foodKind.text!
         
         let newFood = CatFood(size: newSize, type: newFoodKind)
+        
+        //setting first date
+        newFood.setFirstDate()
     }
     
 }
