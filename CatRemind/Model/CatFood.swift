@@ -33,11 +33,21 @@ class CatFood
     
     
     //helper methods
-    public func whenRunsOut() -> Double
+    public func whenDryRunsOut() -> Double
     {
         var days = 0.0
         //serving in pounds
         let dailyServing = 0.4
+        
+        days = foodSize / dailyServing
+        
+        return days
+    }
+    public func whenWetRunsOut() -> Double
+    {
+        var days = 0.0
+        //serving in pounds
+        let dailyServing = 0.375
         
         days = foodSize / dailyServing
         

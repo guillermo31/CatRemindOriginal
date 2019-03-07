@@ -14,7 +14,7 @@ class ViewController2: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    
+        
     }
     
     @IBOutlet weak var muchFood: UITextField!
@@ -36,6 +36,15 @@ class ViewController2: UIViewController
         
         //setting first date
         newFood.setFirstDate()
+        
+        if(foodKind.text == "dry")
+        {
+            newFood.whenDryRunsOut()
+        }
+        else if(foodKind.text == "wet")
+        {
+            newFood.whenWetRunsOut()
+        }
     }
     
 }
