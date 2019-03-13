@@ -17,12 +17,15 @@ class ViewController2: UIViewController
         
     }
     
+    //GUI outlets
     @IBOutlet weak var muchFood: UITextField!
     @IBOutlet weak var foodKind: UITextField!
+    @IBOutlet weak var displayLabel: UILabel!
     
-    
+    //GUI actions
     @IBAction func submitNewFood(_ sender: Any)
     {
+        //To store size of food given by user
         guard let newSize = Double(muchFood.text!)
         else
         {
@@ -30,20 +33,20 @@ class ViewController2: UIViewController
             return
         }
         
+        //To store food kind given by user
         let newFoodKind = foodKind.text!
         
+        //instance of CatFood object
         let newFood = CatFood(size: newSize, type: newFoodKind)
         
-        //setting first date
-        newFood.setFirstDate()
-        
+        //Logic statements to determine output
         if(foodKind.text == "dry")
         {
-            newFood.whenDryRunsOut()
+            displayLabel.text = "\(newFood.whenDryRunsOut()) days until the food runs out!"
         }
         else if(foodKind.text == "wet")
         {
-            newFood.whenWetRunsOut()
+            displayLabel.text = "\(newFood.whenWetRunsOut()) days until the food runs out!"
         }
     }
     
